@@ -1,0 +1,11 @@
+.container{
+    float: left;
+}
+
+.main-page{
+    width: 80%;
+    margin-left: 20%;
+    padding-top: 20px;
+    border-radius: 10px 0 10px 0;
+}
+

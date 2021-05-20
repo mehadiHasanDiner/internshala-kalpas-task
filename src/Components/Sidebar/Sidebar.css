@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebar-container{
+    width: 20%;
+    min-height: 100vh;
+    margin-right: 20%;
+    background-color: #ebf2f7;
+    position: fixed;
+    padding: 10px;
+    box-shadow: 4px 8px 15px rgb(174, 174, 174);
+    border-radius: 0 10px 10px 0;
+}
