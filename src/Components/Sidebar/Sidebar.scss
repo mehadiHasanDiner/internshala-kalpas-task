@@ -1,16 +1,36 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import '../../style/color.scss';
 
-.sidebar-container{
-    width: 20%;
-    min-height: 100vh;
-    margin-right: 20%;
-    background-color: #ebf2f7;
-    position: fixed;
-    padding: 10px;
-    box-shadow: 4px 8px 15px rgb(174, 174, 174);
-    border-radius: 0 10px 10px 0;
-}
+.sidebarDiv {
+    margin: 40px 20px 30px;
+    .toggle {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+      }
+      .buttons {
+        width: 100%;
+        justify-content: center;
+        button {
+          border: none;
+          padding: 10px 20px;
+          display: inline-block;
+        }
+        .gridButton {
+          border-radius: 10px 0 0 10px !important;
+        }
+        .listButton {
+          border-radius: 0 10px 10px 0 !important;
+        }
+      }
+    }
+    .sendFeedback {
+      button {
+        background-color: $button__active;
+      }
+    }
+  }
+  
