@@ -11,6 +11,7 @@ function App() {
   const [allNews, setAllNews] = useState([]);
   const [changeViews, setChangeViews] = useState('list');
   const [newsModal, setNewsModal] = useState({});
+  const [loading, setLoading] = useState(true);
   const [toggleNewsModal, setToggleNewsModal] = useState(false);
   const [toggleNewsFeedback, setToggleNewsFeedback] = useState(false)
 
@@ -21,6 +22,7 @@ function App() {
       .then(data => {
         console.log(data.data);
         setAllNews(data.data);
+        setLoading(false);
       })
   }, [changeViews])
 
@@ -50,31 +52,33 @@ function App() {
 
   return (
     <ChangeNewsView.Provider value={[changeViews, setChangeViews]}>
-      <div className="content">
-        <MainContent
-          handelShowNews={handelShowNews}
-          allNews={allNews}
-          handleDeleteNews={handleDeleteNews}
-        >
-        </MainContent>
-      </div>
-
-      <div className="sidebar">
-        <Sidebar
-          handleOpenFeedback={handleOpenFeedback}
-        >
-        </Sidebar>
-      </div>
-
-      <Feedback
-        trigger={toggleNewsFeedback}
-        handleCloseFeedback={handleCloseFeedback}></Feedback>
-
+      <main>
+        
       <NewsCardModal
-        trigger={toggleNewsModal}
-        closeModal={closeModal}
-        newsModal={newsModal}></NewsCardModal>
+          trigger={toggleNewsModal}
+          closeModal={closeModal}
+          newsModal={newsModal}></NewsCardModal>
 
+        <Feedback
+          trigger={toggleNewsFeedback}
+          handleCloseFeedback={handleCloseFeedback}></Feedback>
+
+        <div className="sidebar">
+          <Sidebar handleOpenFeedback={handleOpenFeedback}>
+          </Sidebar>
+        </div>
+
+        <div className="content">
+          <MainContent
+            handelShowNews={handelShowNews}
+            allNews={allNews}
+            handleDeleteNews={handleDeleteNews}
+            loading={loading}
+          >
+          </MainContent>
+        </div>
+
+      </main>
     </ChangeNewsView.Provider>
   );
 }

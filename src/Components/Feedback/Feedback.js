@@ -1,6 +1,9 @@
 import React from 'react';
 import FeedbackForm from '../FeedbackForm/FeedbackForm';
 import ProfilePage from '../Sidebar/ProfilePage';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+
 
 const Feedback = ({ trigger, handleCloseFeedback }) => {
     return (
@@ -9,7 +12,7 @@ const Feedback = ({ trigger, handleCloseFeedback }) => {
                 <div className = "feedback">
                     <div className="feedbackDiv">
                         <div className="closeButton">
-                            <button onClick = {handleCloseFeedback}> Close</button>
+                            <button onClick = {handleCloseFeedback}> <FontAwesomeIcon icon={faArrowLeft} /> Back</button>
                         </div>
                         <div className = "row p-5">
                             <div className = "col-lg-4">

@@ -3,7 +3,7 @@ import { ChangeNewsView } from '../../App';
 import NewsCard from '../NewsCard/NewsCard';
 import './MainContent.scss';
 
-const MainContent = ({ allNews, handelShowNews, handleDeleteNews }) => {
+const MainContent = ({ loading, allNews, handelShowNews, handleDeleteNews }) => {
     const [changeViews, setChangeViews] = useContext(ChangeNewsView);
     const [currentPage, setCurrentPage] = useState(1);
     const [newsCardPerPage, setNewsCardPerPage] = useState(9);
@@ -45,7 +45,7 @@ const MainContent = ({ allNews, handelShowNews, handleDeleteNews }) => {
     const indexOfFirstPage = indexOfLastPage - newsCardPerPage;
     const currentNewsPage = allNews.slice(indexOfFirstPage, indexOfLastPage)
     // console.log(currentNewsPage);
-    
+
     const handlePrevPage = () => {
         setCurrentPage(currentPage - 1);
     };
@@ -64,6 +64,7 @@ const MainContent = ({ allNews, handelShowNews, handleDeleteNews }) => {
                         <NewsCard
                             key={id}
                             item={data}
+                            loading={loading}
                             handelShowNews={handelShowNews}
                             handleDeleteNews={handleDeleteNews}>
                         </NewsCard>
@@ -79,13 +80,12 @@ const MainContent = ({ allNews, handelShowNews, handleDeleteNews }) => {
                     {totalPageNumber}
                     <li>
                         <button
-                        onClick={handleNextPage}
-                        disabled={currentPage === totalPages.length ? true : false}> Next</button>
+                            onClick={handleNextPage}
+                            disabled={currentPage === totalPages.length ? true : false}> Next</button>
                     </li>
                 </ul>
-        </div>
-
-
+            </div>
+            
         </div >
     );
 };

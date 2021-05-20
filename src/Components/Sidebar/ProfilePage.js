@@ -8,8 +8,8 @@ const ProfilePage = () => {
                 <img src={Person} alt="profile" />
             </div>
             <div className="profile-desc">
-                <h3> Md. Mehadi Hasan</h3>
-                <span>React Web Developer</span>
+                <h3> Hi Reader, </h3>
+                <span>Here's Your News</span>
             </div>
         </div>
     );
