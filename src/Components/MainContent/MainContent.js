@@ -10,14 +10,14 @@ const MainContent = ({ loading, allNews, handelShowNews, handleDeleteNews }) => 
 
     let className;
     switch (changeViews) {
-        case 'list':
-            className = 'list';
+        case 'list-layout':
+            className = 'list-layout';
             break;
-        case 'grid':
-            className = 'grid';
+        case 'grid-layout':
+            className = 'grid-layout';
             break;
         default:
-            className = 'list';
+            className = 'list-layout';
             break;
     }
 
@@ -35,7 +35,7 @@ const MainContent = ({ loading, allNews, handelShowNews, handleDeleteNews }) => 
                 key={number}
                 id={number}
                 onClick={handlePagination}
-                className={currentPage === number ? 'activePage' : null}>
+                className={currentPage === number ? 'active-page' : null}>
                 {number}
             </li>
         );
@@ -70,7 +70,7 @@ const MainContent = ({ loading, allNews, handelShowNews, handleDeleteNews }) => 
                         </NewsCard>
                     ))}
             </div>
-            <div className="itemPagination text-center mt-3">
+            <div className="news-pagination text-center mt-2">
                 <ul>
                     <li>
                         <button

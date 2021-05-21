@@ -1,6 +1,6 @@
 @import '../../style/Color.scss';
 
-.sidebarDiv {
+.sidebar-container {
     margin: 40px 20px 30px;
     .toggle {
       background-color: #fff;
@@ -19,15 +19,15 @@
           padding: 10px 20px;
           display: inline-block;
         }
-        .gridButton {
+        .grid-button {
           border-radius: 10px 0 0 10px !important;
         }
-        .listButton {
+        .list-button {
           border-radius: 0 10px 10px 0 !important;
         }
       }
     }
-    .sendFeedback {
+    .submit-feedback {
       button {
         background-color: $button__active;
       }

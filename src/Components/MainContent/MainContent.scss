@@ -1,16 +1,16 @@
 @import '../../style/Color.scss';
 
 
-.grid {
+.grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    .item {
+    .news {
       display: flex;
       flex-direction: column;
       position: relative;
       margin: 0 5px;
       cursor: pointer;
-      .cardBody {
+      .news-card {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -27,7 +27,7 @@
             border-radius: 10px;
           }
         }
-        .itemContent {
+        .news-container {
           order: 1;
           h3 {
             margin-top: 30px;
@@ -54,11 +54,11 @@
     }
   }
   
-  .list {
-    .item {
+  .list-layout {
+    .news {
       position: relative;
       cursor: pointer;
-      .cardBody {
+      .news-card {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -74,7 +74,7 @@
             border-radius: 50%;
           }
         }
-        .itemContent {
+        .news-container {
           margin: 0 20px;
           h3 {
             font-size: 17px;
@@ -105,7 +105,7 @@
     }
   }
   
-  .itemPagination {
+  .news-pagination {
     display: flex;
     justify-content: center;
     ul {
@@ -124,27 +124,27 @@
         }
       }
     }
-    .activePage {
+    .active-page {
       background-color: $button__active;
     }
   }
   
   @media (min-width: 1250px) {
-    .grid {
+    .grid-layout {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
   }
   
-  @media (max-width: 991px) {
+  @media (max-width: 990px) {
   }
   
-  @media (max-width: 991px) {
-    .list {
-      .item {
-        .cardBody {
+  @media (max-width: 990px) {
+    .list-layout {
+      .news {
+        .news-card {
           flex-direction: column;
           .img {
-            margin-bottom: 20px;
+            margin-bottom: 24px;
           }
         }
         .delete {

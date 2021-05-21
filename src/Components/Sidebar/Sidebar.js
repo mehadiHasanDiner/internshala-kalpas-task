@@ -8,31 +8,31 @@ const Sidebar = ({ handleOpenFeedback }) => {
 
     
     const handleChangeList = () => {
-        setChangeViews('list');
+        setChangeViews('list-layout');
     };
 
     const handleChangeGrid = () => {
-        setChangeViews('grid');
+        setChangeViews('grid-layout');
     };
 
     return (
-        <div className="sidebarDiv">
+        <div className="sidebar-container">
             <ProfilePage></ProfilePage>
             <div className="toggle mt-3">
                 <h3>View Toggle</h3>
                 <div className="buttons d-flex">
-                    <button className="gridButton"
-                        style={{ backgroundColor: changeViews === 'grid' && 'cyan' }}
+                    <button className="grid-button"
+                        style={{ backgroundColor: changeViews === 'grid-layout' && 'cyan' }}
                         onClick={handleChangeGrid}> Grid </button>
 
-                    <button className="listButton"
-                        style={{ backgroundColor: changeViews === 'list' && 'cyan' }}
+                    <button className="list-button"
+                        style={{ backgroundColor: changeViews === 'list-layout' && 'cyan' }}
                         onClick={handleChangeList}>
                         List </button>
                 </div>
             </div>
 
-            <div className="sendFeedback mt-3">
+            <div className="submit-feedback mt-3">
                 <h3> Have a Feedback? </h3>
                 <button onClick={handleOpenFeedback}> We're Listening</button>
             </div>

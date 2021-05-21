@@ -10,14 +10,14 @@ const Feedback = ({ trigger, handleCloseFeedback }) => {
         <div>
             {trigger ?
                 <div className = "feedback">
-                    <div className="feedbackDiv">
-                        <div className="closeButton">
+                    <div className="feedback-container">
+                        <div className="close-button">
                             <button onClick = {handleCloseFeedback}> <FontAwesomeIcon icon={faArrowLeft} /> Back</button>
                         </div>
                         <div className = "row p-5">
                             <div className = "col-lg-4">
                                 <ProfilePage></ProfilePage>
-                                <div className = "sendFeedback mt-3">
+                                <div className = "submit-feedback mt-3">
                                     <h3>Have a Feedback</h3>
                                     <button style ={{backgroundColor:"honeydew"}}> We're Listening</button>
                                 </div>

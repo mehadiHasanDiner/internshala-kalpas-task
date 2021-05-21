@@ -1,6 +1,6 @@
 @import '../style/Color.scss';
 
-.cardModal {
+.modal-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +12,7 @@
     align-items: center;
     background-color: rgba(238, 238, 238, 0.726);
     z-index: 10;
-    .modalInner {
+    .modal-style {
       padding: 100px 0;
       border-radius: 20px;
       background-color: #fff;
@@ -56,14 +56,14 @@
     right: 0;
     bottom: 0;
     z-index: 100;
-    .feedbackDiv {
+    .feedback-container {
       background-color: $primary__color;
       width: 100%;
       padding: 20px;
       border-radius: 0 20px 20px 0;
       position: relative;
       box-shadow: 0 0 10px rgb(194, 194, 194);
-      .closeButton {
+      .close-button {
         position: absolute;
         top: 5%;
         right: 5%;
@@ -105,7 +105,7 @@
     }
   }
   
-  .sendFeedback {
+  .submit-feedback {
     background-color: #fff;
     padding: 20px 10px;
     text-align: center;

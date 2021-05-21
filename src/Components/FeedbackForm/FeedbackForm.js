@@ -24,7 +24,6 @@ const FeedbackForm = () => {
                             type="text"
                             placeholder="First name" id="exampleInputName1"
                             name="firstName" {...register("First name", { required: true, maxLength: 80 })} />
-                        {errors.firstName && (<span style={{ color: 'red' }}>Required field</span>)}
                     </div>
 
                     <div className="form-group">
@@ -34,7 +33,6 @@ const FeedbackForm = () => {
                             type="text" placeholder="Last name"
                             id="exampleInputName1"
                             name="lastName" {...register("Last name", { required: true, maxLength: 100 })} />
-                        {errors.lastName && (<span style={{ color: 'red' }}>Required field</span>)}
                     </div>
 
                     <div className="form-group">
@@ -45,7 +43,6 @@ const FeedbackForm = () => {
                             id="exampleFormControlTextarea1"
                             name="address"
                             rows="5"  {...register("Address", {required: true})} />
-                        {errors.address && (<span style={{ color: 'red' }}>Required field</span>)}
                     </div>
 
                     <div className="form-group">
@@ -56,7 +53,6 @@ const FeedbackForm = () => {
                             className="form-control"
                             name="country1`"
                             id="exampleInputCountry1" {...register("Country", {required: true})} />
-                        {errors.country && (<span style={{ color: 'red' }}>Required field</span>)}
                     </div>
 
                     <div className="form-group">
@@ -66,7 +62,6 @@ const FeedbackForm = () => {
                             id="exampleInputEmail1"
                             name="email"
                             placeholder="Email" {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} />
-                        {errors.email && (<span style={{ color: 'red' }}>Required field</span>)}
                     </div>
 
                     <div className="form-group">
@@ -77,7 +72,6 @@ const FeedbackForm = () => {
                             name="phone"
                             id="exampleInputPhone1"
                             placeholder="Mobile number" {...register("Mobile number", { required: true, minLength: 6, maxLength: 12 })} />
-                        {errors.phone && (<span style={{ color: 'red' }}>Required field</span>)}
                     </div>
 
                     <button type="submit" className="btn btn-success">

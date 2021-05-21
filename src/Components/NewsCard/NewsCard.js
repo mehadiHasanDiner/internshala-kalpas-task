@@ -8,17 +8,17 @@ import loadingPic from '../../images/loading.gif';
 
 const NewsCard = ({ key, loading, item, handelShowNews, handleDeleteNews }) => {
     const [changeViews, setChangeViews] = useContext(ChangeNewsView);
-    const { id, title, summary, link, image, published } = item;
+    const { id, title, summary, link, image, published, } = item;
     return (
-        <div className="item">
+        <div className="news">
             
-            { loading ? (<img  src={loadingPic} alt="" />) : (<div className="cardBody" onClick={() => handelShowNews(id)}>
+            { loading ? (<img  src={loadingPic} alt="" />) : (<div className="news-card" onClick={() => handelShowNews(id)}>
                 <div className="img">
                     <img src={image ? image : noImage} alt="img" />
                 </div>
-                <div className="itemContent">
+                <div className="news-container">
                     <h3>{title}</h3>
-                    {changeViews === 'grid' ? (
+                    {changeViews === 'grid-layout' ? (
                         <p>{summary?.substr(0, 50)}</p>
                     ) : (
                         <p>{summary?.substr(0, 120)}</p>

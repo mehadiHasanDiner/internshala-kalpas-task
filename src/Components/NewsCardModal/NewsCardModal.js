@@ -6,8 +6,8 @@ const NewsCardModal = ({trigger, closeModal, newsModal}) => {
     return (
         <div>
         {trigger ? (
-            <div className = "cardModal">
-                <div className = "modalInner">
+            <div className = "modal-container">
+                <div className = "modal-style">
                     <img src= {image ? image : noImage} alt="" />
                     <h3>{title}</h3>
                     <p>{summary && summary.substr(0, 380)}</p>
