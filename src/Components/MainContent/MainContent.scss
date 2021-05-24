@@ -1,59 +1,5 @@
 @import '../../style/Color.scss';
 
-
-.grid-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    .news {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      margin: 0 5px;
-      cursor: pointer;
-      .news-card {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 10px;
-        margin: 10px 0;
-        .img {
-          order: 2;
-          img {
-            margin-top: 5px;
-            width: 100%;
-            border-radius: 10px;
-          }
-        }
-        .news-container {
-          order: 1;
-          h3 {
-            margin-top: 30px;
-            font-size: 18px;
-            font-weight: 600;
-          }
-          p {
-            font-size: 13px;
-          }
-          span {
-            font-size: 12px;
-          }
-        }
-      }
-      .delete {
-        position: absolute;
-        top: 1%;
-        right: 1%;
-        color: tomato;
-        cursor: pointer;
-        margin: 10px;
-        padding: 5px 10px;
-      }
-    }
-  }
-  
   .list-layout {
     .news {
       position: relative;
@@ -104,6 +50,60 @@
       }
     }
   }
+
+  
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  .news {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 5px;
+    cursor: pointer;
+    .news-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 10px 0;
+      .img {
+        order: 2;
+        img {
+          margin-top: 5px;
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      .news-container {
+        order: 1;
+        h3 {
+          margin-top: 30px;
+          font-size: 18px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 13px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+    .delete {
+      position: absolute;
+      top: 1%;
+      right: 1%;
+      color: tomato;
+      cursor: pointer;
+      margin: 10px;
+      padding: 5px 10px;
+    }
+  }
+}
   
   .news-pagination {
     display: flex;

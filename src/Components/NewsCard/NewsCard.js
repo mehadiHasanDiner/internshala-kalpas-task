@@ -19,9 +19,9 @@ const NewsCard = ({ key, loading, item, handelShowNews, handleDeleteNews }) => {
                 <div className="news-container">
                     <h3>{title}</h3>
                     {changeViews === 'grid-layout' ? (
-                        <p>{summary?.substr(0, 50)}</p>
+                        <p>{summary?.substr(0, 50)}...</p>
                     ) : (
-                        <p>{summary?.substr(0, 120)}</p>
+                        <p>{summary?.substr(0, 120)}...</p>
                     )}
                     <span>{published}</span>
                 </div>
