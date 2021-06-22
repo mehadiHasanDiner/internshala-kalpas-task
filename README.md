@@ -13,6 +13,5 @@
 => I also use pagination of react. 
 
 ### Demo
-[![Please Click to Watch Demo Video of the project](https://img.youtube.com/vi/qVdZ2gxe5kM/0.jpg)](https://youtu.be/qVdZ2gxe5kM)
+[![SC2 Video](https://img.youtube.com/vi/qVdZ2gxe5kM/0.jpg)](https://youtu.be/qVdZ2gxe5kM)
 
-<a href="https://youtu.be/qVdZ2gxe5kM" targer=_blank>Click to View</a>
