@@ -13,6 +13,6 @@
 => I also use pagination of react. 
 
 ### Demo
-[![Please Click to Watch Demo Video of the project](https://img.youtube.com/vi/qVdZ2gxe5kM/0.jpg target=_blank](https://youtu.be/qVdZ2gxe5kM)
+[![Please Click to Watch Demo Video of the project](https://img.youtube.com/vi/qVdZ2gxe5kM/0.jpg](https://youtu.be/qVdZ2gxe5kM)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qVdZ2gxe5kM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
