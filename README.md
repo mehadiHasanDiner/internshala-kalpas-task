@@ -13,5 +13,5 @@
 => I also use pagination of react. 
 
 ### Demo
-[![SC2 Video](https://img.youtube.com/vi/qVdZ2gxe5kM/0.jpg)](https://youtu.be/qVdZ2gxe5kM)
+[![SC2 Video](src/images/demo.gif)](https://youtu.be/qVdZ2gxe5kM)
 
